@@ -29,7 +29,7 @@ C4 - 47 pF
 the rest - 100 nF
 
 Capacitors SMD 1210 (tantal)
-Ñ1,C11 - 10mF 16v
+C1,C11 - 10mF 16v
 
 Quartz resonator - 16 mHz
 
