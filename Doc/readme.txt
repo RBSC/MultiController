@@ -5,9 +5,9 @@ Copyright (c) 2015 RBSC
 NOTES
 -----
 
-The ROMs that are provided for this controller are different only in Nextor version. One of the versions has the latest available
+The ROMs that are provided for this controller are different only in Nextor version. One of the ROMs has the latest available
 Nextor version (Alpha) that supports DSK emulation. So if you are planning to use DSK image emulation, please write the Alpha
-BIOS into the EEPROM chip.
+ROM BIOS into the EEPROM chip.
 
 
 IMPORTANT!

@@ -9,6 +9,6 @@ http://www.konamiman.com/msx/msx-e.html
 
 Sunrise IDE ROM is copyright by Sunrise for MSX.
 
-One of the ROMs contain the latest Alphe version of Nextor that supports DSK image emulation.
+One of the ROMs contains the latest Alpha version of Nextor that supports DSK image emulation.
 
 See the readme.txt file for more info.
