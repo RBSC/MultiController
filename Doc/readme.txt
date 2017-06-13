@@ -12,7 +12,7 @@ When all 3 pin jumpers are in the upper position, then a normal PC drive (with d
 cable. There can be maximum 2 drives connected to the cartridge. The drive connected to the middle cable's connector will be B: and
 the drive connected to the end of the cable will be A:.
 
-When all 3 pin jumpers are in the lower position, then a normal PC drive (with default DS1 setting) can be connected to the floppy
+When all 3 pin jumpers are in the lower position, then a normal PC drive (with default DS2 setting) can be connected to the floppy
 cable. There can be maximum 2 drives connected to the cartridge. The drive connected to the middle cable's connector will be A: and
 the drive connected to the end of the cable will be B:.
 
