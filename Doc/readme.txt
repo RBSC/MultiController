@@ -7,17 +7,19 @@ Jumper settings
 
 The cartridge has a set of jumpers to configure the hardware and internal software. There are 4 jumpers consisting of 3 pins
 and 3 jumpers consisting of 2 pins. The jumpers that consist of 4 pins are used to configure the DS (drive select) signal.
+The 2-pin jumpers configure the on-board devices and BIOSes.
 
-When all 3 pin jumpers are in the upper position, then a normal PC drive (with default DS1 setting) can be connected to the floppy
-cable. There can be maximum 2 drives connected to the cartridge. The drive connected to the middle cable's connector will be B: and
-the drive connected to the end of the cable will be A:.
+When all 3 pin jumpers are in the upper position, then a normal PC drive (with default DS1 setting) can be connected to the standard
+PC  floppy cable. There can be maximum 2 drives connected to the cartridge. The drive connected to the middle cable's connector will
+be B: and the drive connected to the end of the cable will be A:.
 
-When all 3 pin jumpers are in the lower position, then a normal PC drive (with default DS2 setting) can be connected to the floppy
-cable. There can be maximum 2 drives connected to the cartridge. The drive connected to the middle cable's connector will be A: and
-the drive connected to the end of the cable will be B:.
+When all 3 pin jumpers are in the lower position, then a normal PC drive (with default DS2 setting) can be connected to the standard
+PC floppy cable. There can be maximum 2 drives connected to the cartridge. The drive connected to the middle cable's connector will
+be A: and the drive connected to the end of the cable will be B:.
 
-When the 3 pin jumpers are set as shown for DS0 (see the markings on the cartridge), then a 720kb drive with DS0 setting can be
-connected to the controller. Only one drive can be connected in this case.
+When the 3 pin jumpers are set as shown for DS0 (see the markings on the cartridge), then a DS/DD 720kb drive with DS0 setting can be
+connected to the controller with the straight floppy cable (PC cable with a "twist" won't work). Only one drive can be connected to
+the controller in this case.
 
 The "F+H" jumper is used to enable or disable the expanded slot. If the jumper is set, then both floppy controller and IDE controller
 are enabled. If the jumper is off, then only one controller is enabled (see below).
