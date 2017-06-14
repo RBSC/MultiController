@@ -1,0 +1,9 @@
+Fitter Status : Successful - Sun Oct 11 19:04:33 2015
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : HddFddp_vclc
+Top-level Entity Name : HddFddp_vclc
+Family : MAX7000S
+Device : EPM7128SLC84-15
+Timing Models : Final
+Total macrocells : 94 / 128 ( 73 % )
+Total pins : 68 / 68 ( 100 % )

@@ -1,0 +1,208 @@
+Analysis & Synthesis report for HddFddp_vclc
+Sun Oct 11 19:04:32 2015
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. User-Specified and Inferred Latches
+  8. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                           ;
++-----------------------------+------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Sun Oct 11 19:04:32 2015    ;
+; Quartus II Version          ; 9.0 Build 132 02/25/2009 SJ Full Version ;
+; Revision Name               ; HddFddp_vclc                             ;
+; Top-level Entity Name       ; HddFddp_vclc                             ;
+; Family                      ; MAX7000S                                 ;
+; Total macrocells            ; 92                                       ;
+; Total pins                  ; 64                                       ;
++-----------------------------+------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                    ;
++----------------------------------------------------------------+-----------------+---------------+
+; Option                                                         ; Setting         ; Default Value ;
++----------------------------------------------------------------+-----------------+---------------+
+; Device                                                         ; EPM7128SLC84-15 ;               ;
+; Top-level entity name                                          ; HddFddp_vclc    ; HddFddp_vclc  ;
+; Family name                                                    ; MAX7000S        ; Stratix II    ;
+; Use smart compilation                                          ; Off             ; Off           ;
+; Create Debugging Nodes for IP Cores                            ; Off             ; Off           ;
+; Preserve fewer node names                                      ; On              ; On            ;
+; Disable OpenCore Plus hardware evaluation                      ; Off             ; Off           ;
+; Verilog Version                                                ; Verilog_2001    ; Verilog_2001  ;
+; VHDL Version                                                   ; VHDL93          ; VHDL93        ;
+; State Machine Processing                                       ; Auto            ; Auto          ;
+; Safe State Machine                                             ; Off             ; Off           ;
+; Extract Verilog State Machines                                 ; On              ; On            ;
+; Extract VHDL State Machines                                    ; On              ; On            ;
+; Ignore Verilog initial constructs                              ; Off             ; Off           ;
+; Iteration limit for constant Verilog loops                     ; 5000            ; 5000          ;
+; Iteration limit for non-constant Verilog loops                 ; 250             ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                        ; On              ; On            ;
+; Parallel Synthesis                                             ; Off             ; Off           ;
+; NOT Gate Push-Back                                             ; On              ; On            ;
+; Power-Up Don't Care                                            ; On              ; On            ;
+; Remove Duplicate Registers                                     ; On              ; On            ;
+; Ignore CARRY Buffers                                           ; Off             ; Off           ;
+; Ignore CASCADE Buffers                                         ; Off             ; Off           ;
+; Ignore GLOBAL Buffers                                          ; Off             ; Off           ;
+; Ignore ROW GLOBAL Buffers                                      ; Off             ; Off           ;
+; Ignore LCELL Buffers                                           ; Auto            ; Auto          ;
+; Ignore SOFT Buffers                                            ; Off             ; Off           ;
+; Limit AHDL Integers to 32 Bits                                 ; Off             ; Off           ;
+; Optimization Technique                                         ; Speed           ; Speed         ;
+; Allow XOR Gate Usage                                           ; On              ; On            ;
+; Auto Logic Cell Insertion                                      ; On              ; On            ;
+; Parallel Expander Chain Length                                 ; 4               ; 4             ;
+; Auto Parallel Expanders                                        ; On              ; On            ;
+; Auto Open-Drain Pins                                           ; On              ; On            ;
+; Auto Resource Sharing                                          ; Off             ; Off           ;
+; Maximum Fan-in Per Macrocell                                   ; 100             ; 100           ;
+; Use LogicLock Constraints during Resource Balancing            ; On              ; On            ;
+; Ignore translate_off and synthesis_off directives              ; Off             ; Off           ;
+; Show Parameter Settings Tables in Synthesis Report             ; On              ; On            ;
+; HDL message level                                              ; Level2          ; Level2        ;
+; Suppress Register Optimization Related Messages                ; Off             ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report       ; 100             ; 100           ;
+; Number of Inverted Registers Reported in Synthesis Report      ; 100             ; 100           ;
+; Block Design Naming                                            ; Auto            ; Auto          ;
+; Synthesis Effort                                               ; Auto            ; Auto          ;
+; Allows Asynchronous Clear Usage For Shift Register Replacement ; On              ; On            ;
+; Analysis & Synthesis Message Level                             ; Medium          ; Medium        ;
++----------------------------------------------------------------+-----------------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                   ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                      ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+
+; HddFddp_vclc.vhd                 ; yes             ; User VHDL File  ; K:/msx/ALTERA_S_MSX/hddfddp_vclc/HddFddp_vclc.vhd ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++----------------------+----------------------+
+; Resource             ; Usage                ;
++----------------------+----------------------+
+; Logic cells          ; 92                   ;
+; Total registers      ; 23                   ;
+; I/O pins             ; 64                   ;
+; Shareable expanders  ; 27                   ;
+; Parallel expanders   ; 13                   ;
+; Maximum fan-out node ; pSltAdr[15]          ;
+; Maximum fan-out      ; 88                   ;
+; Total fan-out        ; 1583                 ;
+; Average fan-out      ; 8.65                 ;
++----------------------+----------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                 ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |HddFddp_vclc              ; 92         ; 64   ; |HddFddp_vclc       ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; RD_hT1                                              ; RD_hT1~0            ; yes                    ;
+; WR_hT1                                              ; WR_hT1~0            ; yes                    ;
+; IDEsOUT[0]                                          ; process_5~1         ; yes                    ;
+; IDEsOUT[1]                                          ; process_5~1         ; yes                    ;
+; IDEsOUT[2]                                          ; process_5~1         ; yes                    ;
+; IDEsOUT[3]                                          ; process_5~1         ; yes                    ;
+; IDEsOUT[4]                                          ; process_5~1         ; yes                    ;
+; IDEsOUT[5]                                          ; process_5~1         ; yes                    ;
+; IDEsOUT[6]                                          ; process_5~1         ; yes                    ;
+; IDEsOUT[7]                                          ; process_5~1         ; yes                    ;
+; Number of user-specified and inferred latches = 10  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Sun Oct 11 19:04:30 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HddFddp_vclc -c HddFddp_vclc
+Info: Found 2 design units, including 1 entities, in source file HddFddp_vclc.vhd
+    Info: Found design unit 1: HddFddp_vclc-RTL
+    Info: Found entity 1: HddFddp_vclc
+Info: Elaborating entity "HddFddp_vclc" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at HddFddp_vclc.vhd(116): signal "RD_hT2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at HddFddp_vclc.vhd(117): signal "IDEReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at HddFddp_vclc.vhd(117): signal "pSltAdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at HddFddp_vclc.vhd(102): inferring latch(es) for signal or variable "RD_hT1", which holds its previous value in one or more paths through the process
+Warning (10492): VHDL Process Statement warning at HddFddp_vclc.vhd(153): signal "IDEReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at HddFddp_vclc.vhd(153): signal "pSltAdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at HddFddp_vclc.vhd(139): inferring latch(es) for signal or variable "WR_hT1", which holds its previous value in one or more paths through the process
+Warning (10492): VHDL Process Statement warning at HddFddp_vclc.vhd(230): signal "CLC_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at HddFddp_vclc.vhd(238): signal "pSltAdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at HddFddp_vclc.vhd(238): signal "pSltWr_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at HddFddp_vclc.vhd(239): signal "pSltDat" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at HddFddp_vclc.vhd(236): inferring latch(es) for signal or variable "IDEsOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "IDEsOUT[0]" at HddFddp_vclc.vhd(236)
+Info (10041): Inferred latch for "IDEsOUT[1]" at HddFddp_vclc.vhd(236)
+Info (10041): Inferred latch for "IDEsOUT[2]" at HddFddp_vclc.vhd(236)
+Info (10041): Inferred latch for "IDEsOUT[3]" at HddFddp_vclc.vhd(236)
+Info (10041): Inferred latch for "IDEsOUT[4]" at HddFddp_vclc.vhd(236)
+Info (10041): Inferred latch for "IDEsOUT[5]" at HddFddp_vclc.vhd(236)
+Info (10041): Inferred latch for "IDEsOUT[6]" at HddFddp_vclc.vhd(236)
+Info (10041): Inferred latch for "IDEsOUT[7]" at HddFddp_vclc.vhd(236)
+Info (10041): Inferred latch for "WR_hT1" at HddFddp_vclc.vhd(139)
+Info (10041): Inferred latch for "RD_hT1" at HddFddp_vclc.vhd(102)
+Info: Implemented 183 device resources after synthesis - the final resource count might be different
+    Info: Implemented 24 input pins
+    Info: Implemented 16 output pins
+    Info: Implemented 24 bidirectional pins
+    Info: Implemented 92 macrocells
+    Info: Implemented 27 shareable expanders
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 238 megabytes
+    Info: Processing ended: Sun Oct 11 19:04:32 2015
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
