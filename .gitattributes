@@ -1,3 +1,6 @@
 * linguist-vendored
 *.php linguist-vendored=false
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
