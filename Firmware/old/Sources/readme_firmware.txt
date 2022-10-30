@@ -1,6 +1,6 @@
 --------------------------------------------
 MSX FDD+IDE Cartridge version 1.2
-Copyright (c) 2015-2022 RBSC
+Copyright (c) 2015-2020 RBSC
 --------------------------------------------
 
 The Altera firmware was created by RBSC. Commercial usage is not allowed!

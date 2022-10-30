@@ -1,6 +1,6 @@
 --------------------------------------------
 MSX FDD+IDE Cartridge version 1.2
-Copyright (c) 2015-2020 RBSC
+Copyright (c) 2015-2022 RBSC
 --------------------------------------------
 
 Partslist
@@ -9,7 +9,7 @@ Partslist
 Integrated circuits:
 
 Altera EPM7128SLC84-15 - PLCC-84
-WDC WD37C65BJM - PLCC-44
+WDC WD37C65BJM - PLCC-44 or ST AIC37C65CL - PLCC-44 (with v1.10 firmware)
 AM29F002BT-70JC - PLCC-32
 
 Connectors:

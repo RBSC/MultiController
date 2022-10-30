@@ -1,7 +1,7 @@
 --------------------------------------------
 MSX FDD-IDE Cartridge version 1.2
 Copyright (c) 2015-2022 RBSC
-Updated: 16.02.2022
+Updated: 29.10.2022
 --------------------------------------------
 
 The FDD-IDE is a combo controller that allows to connect up to 2 floppy drives (PC 1.44Mb or older 720kb) and one Compact Flash
@@ -42,6 +42,9 @@ otherwise the "Nextor" BIOS will be enabled.
 NOTES
 -----
 
+Starting from firmware version 1.10 it's possible to use the AIC37C65CL or similar FDD controller chip with the board. The previous
+version of the firmware is incompatible with these chips.
+
 Previously, we provided 3 different ROMs, but now there's only one. The older ROMs are still located in the "old" subfolder.
 
 The current ROM file "FDD-IDE_V2.ROM" contains a slightly patched version of the Sunrise IDE ROM and the Release version of the
@@ -65,7 +68,8 @@ When the sources of the tools are used to create alternative projects, please al
 Contact information
 -------------------
 
-The members of RBSC group Tnt23, Wierzbowsky, Pencioner, Ptero, GreyWolf, SuperMax and DJS3000 can be contacted via the group's e-mail address:
+The members of RBSC group TNT23, Wierzbowsky, Ptero, GreyWolf, SuperMax, Pyhesty, VWarlock and DJS3000 can be contacted via the group's
+e-mail address:
 
 info@rbsc.su
 

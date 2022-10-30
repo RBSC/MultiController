@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--- FDD-IDE firmware v1.10
+-- FDD-IDE firmware v1.00
 -- Copyright 2015-2022 (C) RBSC
 ----------------------------------------------------------------
 
@@ -68,7 +68,7 @@ architecture RTL of HddFddp_vclc is
   signal FDDregDec    : std_logic;
 --  signal DecSccA     : std_logic;
 --  signal DecSccB     : std_logic;
-  signal WDCR :std_logic;
+
 
 begin
 
@@ -189,24 +189,17 @@ begin
   ----------------------------------------------------------------
   -- FDD WDC controler decoder
   ---------------------------------------------------------------- 
-  FDDregDec <= '0';
---  FDDregDec		<= '1' when DecExp1s1 = '1' and  pSltAdr(13 downto 2) = "111111111100" -- 3FF(0/1/2/3)
---                       else '0';
---WDCReset 		<= '1' when pSltRst_n = '0' 
--- 					   else '0';
-  process (pSltRst_n, CLC_n, WDCR)
-  begin
-    if (CLC_n'event and CLC_n = '1') then
-      WDCR <= not pSltRst_n;
-    end if;
-  end process;
-  WDCReset <= WDCR;
-  WDCCs_n		<= '0' when (DecExp1s2 = '1' or DecExp1s0 = '1') and pSltAdr(13 downto 12) = "00" and (pSltAdr(0) = '1' or pSltRd_n = '0')
---            else '0' when FDDregDec = '1' and pSltAdr(1) = '0'
-              else '1';
-  WDCLDOR_n     <= '0' when (DecExp1s2 = '1' or DecExp1s0 = '1') and pSltAdr(13 downto 12) = "01"
---            else '0' when FDDregDec = '1' and pSltAdr(1) = '1'
-              else '1';
+  
+  FDDregDec		<= '1' when DecExp1s1 = '1' and  pSltAdr(13 downto 2) = "111111111100" -- 3FF(0/1/2/3)
+                       else '0';
+  WDCReset 		<= '1' when pSltRst_n = '0' 
+					   else '0';
+  WDCCs_n		<= '0' when ((DecExp1s2 = '1' or DecExp1s0 = '1') and pSltAdr(13 downto 12) = "00") or 
+                            (FDDregDec = '1' and pSltAdr(1) = '0')
+                       else '1';
+  WDCLDOR_n     <= '0' when ((DecExp1s2 = '1' or DecExp1s0 = '1') and pSltAdr(13 downto 12) = "01") or 
+                            (FDDregDec = '1' and pSltAdr(1) = '1')
+                       else '1';
                  
   ----------------------------------------------------------------
   -- ROM decoder
