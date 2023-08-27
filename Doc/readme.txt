@@ -1,7 +1,7 @@
 --------------------------------------------
 MSX FDD-IDE Cartridge version 1.2
-Copyright (c) 2015-2022 RBSC
-Updated: 29.10.2022
+Copyright (c) 2015-2023 RBSC
+Updated: 27.08.2023
 --------------------------------------------
 
 The FDD-IDE is a combo controller that allows to connect up to 2 floppy drives (PC 1.44Mb or older 720kb) and one Compact Flash
@@ -45,14 +45,16 @@ NOTES
 Starting from firmware version 1.10 it's possible to use the AIC37C65CL or similar FDD controller chip with the board. The previous
 version of the firmware is incompatible with these chips.
 
-Previously, we provided 3 different ROMs, but now there's only one. The older ROMs are still located in the "old" subfolder.
+Previously, we provided 3 different ROMs, but now there's only one. The older ROMs are still located in the "old" and "old1"
+subfolders.
 
-The current ROM file "FDD-IDE_V2.ROM" contains a slightly patched version of the Sunrise IDE ROM and the Release version of the
-Nextor 2.1.0 IDE ROM that was adapted for RBSC's Carnivore2 and FDD-IDE controller. This ROM is faster and has the slave detection
+The current ROM file "FDD-IDE_V21.ROM" contains a slightly patched version of the Sunrise IDE ROM and the Release version of the
+Nextor 2.1.1 IDE ROM that natively supports Carnivore2 and FDD-IDE controllers. This ROM is faster and has the slave device detection
 disabled. It is 262kb in size.
 
-The "FDD-IDE_V2_29F040.ROM" is the file that you can burn directly into the 29F040 FlashROM chip. It is 512kb in size and contains
-the same data as the "FDD-IDE_V2.ROM" file.
+The "FDD-IDE_V21_29F040.ROM" is the file that you can burn directly into the 29F040 FlashROM chip. It is 512kb in size and contains
+the same data as the "FDD-IDE_V21.ROM" file.
+
 
 
 IMPORTANT!
