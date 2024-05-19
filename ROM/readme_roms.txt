@@ -1,6 +1,6 @@
 --------------------------------------------
 MSX FDD+IDE Cartridge version 1.2
-Copyright (c) 2015-2023 RBSC
+Copyright (c) 2015-2024 RBSC
 --------------------------------------------
 
 The IDE ROMs bear the copyrights of their respective creators/owners.
